@@ -43,13 +43,4 @@ public class TaskOne {
         }
         System.out.println("There are: " + even + " even numbers");
     }
-
-
-
-
-
-
-    // show the amount of odd numbers
-    // show the amount of even numbers
-    //compare both halves in terms of the sum of the numbers it contains
 }

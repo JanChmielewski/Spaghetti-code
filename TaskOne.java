@@ -11,10 +11,24 @@ public class TaskOne {
 
         Scanner in = new Scanner(System.in);
 
-        List<Double> inputs = new ArrayList<Double>();
-        while (in.hasNextDouble()) {
-            inputs.add(in.nextDouble());
+//        List<Double> inputs = new ArrayList<Double>();
+
+        ArrayList<String> str = new ArrayList<String>();
+        ArrayList<Integer> inputs = new ArrayList<Integer>();
+
+        while (in.hasNextLine()) {
+            String input = in.nextLine();
+            try {
+                inputs.add(Integer.parseInt(input.replaceAll("")));
+            } catch (NumberFormatException nfe) {
+                System.err.println(("'" + input + "'is not a number!"));
+            }
         }
+
+//        for(String s: inputs) {
+//            System.out.print(s + ", ");
+//        }
+
         System.out.println("Unsorted list: " + inputs);
 
         Collections.sort(inputs);

@@ -11,12 +11,6 @@ public class TaskOne {
 
         Scanner in = new Scanner(System.in);
 
-<<<<<<< Updated upstream
-        List<Double> inputs = new ArrayList<Double>();
-        while (in.hasNextDouble()) {
-            inputs.add(in.nextDouble());
-        }
-=======
         String line = in.nextLine();
         List<String> numbers = Arrays.asList(line.split(","));
         List<Integer> inputs = new ArrayList<>();
@@ -24,7 +18,6 @@ public class TaskOne {
             inputs.add(Integer.valueOf((number)));
         }
 
->>>>>>> Stashed changes
         System.out.println("Unsorted list: " + inputs);
 
         Collections.sort(inputs);

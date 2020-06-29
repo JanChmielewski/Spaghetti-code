@@ -19,7 +19,7 @@ public class TaskOne {
         while (in.hasNextLine()) {
             String input = in.nextLine();
             try {
-                inputs.add(Integer.parseInt(input.replaceAll("")));
+                str.add(Integer.parseInt(input.replaceAll(",")));
             } catch (NumberFormatException nfe) {
                 System.err.println(("'" + input + "'is not a number!"));
             }

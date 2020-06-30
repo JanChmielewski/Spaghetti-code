@@ -64,8 +64,10 @@ public class TaskOne {
 
         if (firstHalf>secondHalf) {
             System.out.println("The sum of the first half is grater!");
-        } else {
+        } else if (firstHalf<secondHalf){
             System.out.println("The sum of the second half is grater!");
+        } else {
+            System.out.println("Halves are equal!");
         }
 
 

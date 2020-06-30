@@ -44,5 +44,30 @@ public class TaskOne {
             }
         }
         System.out.println("There are: " + even + " even numbers");
+
+        int firstHalf = 0, secondHalf = 0;
+
+        for (int i = 0; i<inputs.size(); i++) {
+            if (i < (inputs.size()/2)) {
+                firstHalf += inputs.get(i);
+            }
+            else {
+                secondHalf += inputs.get(i);
+            }
+        }
+        System.out.println("The sum of the first half is: " + firstHalf);
+        System.out.println("The sum of the second half is: " + secondHalf);
+
+        if ((inputs.size()/2) != (inputs.size() - (inputs.size()/2))) {
+           secondHalf = secondHalf - inputs.get(inputs.size() - 1);
+        }
+
+        if (firstHalf>secondHalf) {
+            System.out.println("The sum of the first half is grater!");
+        } else {
+            System.out.println("The sum of the second half is grater!");
+        }
+
+
     }
 }

@@ -4,12 +4,25 @@ public class TaskOne {
 
     public static final Scanner in = new Scanner(System.in);
 
-    public void list(List<Integer> inputs) {
+    public void list() {
         this.entrMsg();
-        this.menu(inputs);
+        this.menu();
     }
 
     void entrMsg() {
+        System.out.println("Enter a list of numbers you would like to sort and please separate them by commas.");
+        System.out.println("Example: ");
+        System.out.println("1,2,3,4,...,");
+        System.out.println("Enter some numbers: ");
+
+        String line = in.nextLine();
+        List<String> numbers = Arrays.asList(line.split(","));
+        List<Integer> inputs = new ArrayList<>();
+        for (String number : numbers) {
+            inputs.add(Integer.valueOf((number)));
+        }
+
+        System.out.println("Unsorted list: " + inputs);
 
     }
 
@@ -18,7 +31,7 @@ public class TaskOne {
         System.out.println("Sorted list: " + inputs);
     }
 
-    void menu (List<Integer> inputs) {
+    void menu(List<Integer> inputs) {
 
         System.out.println("Here's a list of things I can do: ");
         System.out.println("1) Sort list    2) Show the lowest and highest value    3) Show the amount of odd and even numbers   4) Sum and compare two halves of the list");

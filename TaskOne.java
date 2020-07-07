@@ -1,15 +1,22 @@
 import java.util.*;
 
+/**
+ * 1. sortowanie bąbelkowe w osobnej metodzie
+ * 2. oddzielenie metod od wyświetlania tekstu
+ * 3. przypisać każdej metodzie tylko jedna odpowiedzalność
+ *
+ */
+
 public class TaskOne {
 
     public static final Scanner in = new Scanner(System.in);
 
     public void list() {
-        this.entrMsg();
-        this.menu();
+        List<Integer> inputs = this.entrMsg();
+        this.menu(inputs);
     }
 
-    void entrMsg() {
+    public List<Integer> entrMsg() {
         System.out.println("Enter a list of numbers you would like to sort and please separate them by commas.");
         System.out.println("Example: ");
         System.out.println("1,2,3,4,...,");
@@ -23,24 +30,23 @@ public class TaskOne {
         }
 
         System.out.println("Unsorted list: " + inputs);
-
+        return inputs;
     }
 
-    void sort (List<Integer> inputs) {
-        Collections.sort(inputs);
-        System.out.println("Sorted list: " + inputs);
-    }
+//    void sort (List<Integer> inputs) {
+//        Collections.sort(inputs);
+//        System.out.println("Sorted list: " + inputs);
+//    }
 
     void menu(List<Integer> inputs) {
 
         System.out.println("Here's a list of things I can do: ");
         System.out.println("1) Sort list    2) Show the lowest and highest value    3) Show the amount of odd and even numbers   4) Sum and compare two halves of the list");
 
-        int decision = 0;
-        decision = in.nextInt();
+        int decision = in.nextInt();
         switch (decision) {
             case 1:
-                this.sort(inputs);
+                this.bubbleSort(inputs);
                 break;
             case 2:
                 this.value(inputs);
@@ -101,6 +107,25 @@ public class TaskOne {
             System.out.println("The sum of the second half is grater!");
         } else {
             System.out.println("Halves are equal!");
+        }
+    }
+
+    static void bubbleSort (List<Integer> inputs) {
+
+        Integer[] inputsArray = inputs.toArray( new Integer[0]);
+
+        for (int i = 0; i < inputsArray.length; i++) {
+            for (int j = 0; j < inputsArray.length - 1; j++) {
+                if (inputsArray[j] > inputsArray[j + 1]) {
+                    int temp = inputsArray[j + 1];
+                    inputsArray[j + 1] = inputsArray[j];
+                    inputsArray[j] = temp;
+
+                }
+            }
+        }
+        for (Integer s : inputsArray) {
+            System.out.print(s + ", ");
         }
     }
 

@@ -42,6 +42,8 @@ public class TaskOne {
                 sort(inputs);
 
                 System.out.print("[");
+                // this inputsArray is a different variable than the one in sort() method,
+                // did you want to assign return value from sort() and then use it in the for loop?
                 for (Integer s : inputsArray) {
                     System.out.print(s + ", ");
                 }

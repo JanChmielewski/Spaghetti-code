@@ -1,9 +1,6 @@
 import java.util.*;
 
-/**
- * 2. oddzielenie metod od wyświetlania tekstu
- * 3. przypisać każdej metodzie tylko jedna odpowiedzalność
- */
+// find a way to read "enter" as invalid selection
 
 public class TaskOne {
 
@@ -52,10 +49,10 @@ public class TaskOne {
                 System.out.print("]");
                 break;
             case 3:
-                System.out.println("The lowest value is: " + Collections.min(inputs));
+                System.out.println("The lowest value is: " + minValue(inputs));
                 break;
             case 4:
-                System.out.println("The highest value is: " + Collections.max(inputs));
+                System.out.println("The highest value is: " +maxValue(inputs));
                 break;
             case 5:
                 System.out.println("There are: " + oddAmount(inputs) + " odd numbers");
@@ -70,18 +67,45 @@ public class TaskOne {
                 System.out.println("The sum of the second half is: " + printSecondHalfSum(inputs));
                 break;
             case 9:
+                Integer firstHalf = printFirstHalfSum(inputs);
+                Integer secondHalf = removeLastElement(inputs);
 
-                if (printFirstHalfSum(inputs) > printSecondHalfSum(inputs)) {
+                if (firstHalf > secondHalf) {
                     System.out.println("The sum of the first half is grater!");
-                } else if (printFirstHalfSum(inputs) < printSecondHalfSum(inputs)) {
+                } else if (firstHalf < secondHalf) {
                     System.out.println("The sum of the second half is grater!");
                 } else {
                     System.out.println("Halves are equal!");
                 }
-
-//                compareHalves(inputs));
+                System.out.println(inputs);
                 break;
         }
+    }
+
+    public int minValue(List<Integer> inputs) {
+        int min = 0;
+        for(int i = 0; i < inputs.size(); i++) {
+                 min = inputs.get(i);
+            for (int number : inputs) {
+                if (number < min) {
+                    min = number;
+                }
+            }
+        }
+        return min;
+    }
+
+    public int maxValue(List<Integer> inputs) {
+        int max = 0;
+        for (int i = 0; i < inputs.size(); i++) {
+            max = inputs.get(i);
+            for (int number: inputs) {
+                if (number > max) {
+                    max = number;
+                }
+            }
+        }
+        return max;
     }
 
     public List<Integer> sort(List<Integer> inputs) {
@@ -132,14 +156,16 @@ public class TaskOne {
         return secondHalf;
     }
 
-//    public void compareHalves(List<Integer> inputs) {
-//
-//        if ((inputs.size() / 2) != (inputs.size() - (inputs.size() / 2))) {
-//            int secondHalf = printSecondHalfSum(inputs);
-//            secondHalf = secondHalf - inputs.get(inputs.size() - 1);
-//        }
-//
-//    }
+    public Integer removeLastElement(List<Integer> inputs) {
+
+        Integer secondHalf = printSecondHalfSum(inputs);
+        if ((inputs.size() / 2) != (inputs.size() - (inputs.size() / 2))) {
+            secondHalf = secondHalf - inputs.get(inputs.size() - 1);
+        }
+
+        return secondHalf;
+
+    }
 
     public List<Integer> bubbleSort(List<Integer> inputs) {
 

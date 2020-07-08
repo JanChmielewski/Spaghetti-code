@@ -3,14 +3,13 @@ import java.util.*;
 /**
  * 2. oddzielenie metod od wyświetlania tekstu
  * 3. przypisać każdej metodzie tylko jedna odpowiedzalność
- *
  */
 
 public class TaskOne {
 
     public static final Scanner in = new Scanner(System.in);
 
-    public void list(Integer[] inputsArray) {
+    public void list() {
         System.out.println("The list of thing I can do");
         System.out.println("1. Print unsorted list");
         System.out.println("2. Sort");
@@ -39,103 +38,122 @@ public class TaskOne {
 
         switch (choice) {
             case 1:
+                System.out.println("Unsorted list: " + inputs);
+                break;
+            case 2:
                 sort(inputs);
 
                 System.out.print("[");
-                // this inputsArray is a different variable than the one in sort() method,
-                // did you want to assign return value from sort() and then use it in the for loop?
-                for (Integer s : inputsArray) {
+                for (Integer s : inputs) {
                     System.out.print(s + ", ");
                 }
-
-                break;
-            case 2:
-                this.value(inputs);
+                System.out.print("\b");
+                System.out.print("\b");
+                System.out.print("]");
                 break;
             case 3:
-                this.evenOdd(inputs);
+                System.out.println("The lowest value is: " + Collections.min(inputs));
                 break;
             case 4:
-                this.sum(inputs);
+                System.out.println("The highest value is: " + Collections.max(inputs));
                 break;
             case 5:
+                System.out.println("There are: " + oddAmount(inputs) + " odd numbers");
                 break;
             case 6:
+                System.out.println("There are: " + evenAmount(inputs) + " even numbers");
                 break;
             case 7:
+                System.out.println("The sum of the first half is: " + printFirstHalfSum(inputs));
                 break;
             case 8:
+                System.out.println("The sum of the second half is: " + printSecondHalfSum(inputs));
                 break;
             case 9:
+
+                if (printFirstHalfSum(inputs) > printSecondHalfSum(inputs)) {
+                    System.out.println("The sum of the first half is grater!");
+                } else if (printFirstHalfSum(inputs) < printSecondHalfSum(inputs)) {
+                    System.out.println("The sum of the second half is grater!");
+                } else {
+                    System.out.println("Halves are equal!");
+                }
+
+//                compareHalves(inputs));
                 break;
         }
     }
-        public void sort (List < Integer > inputs) {
-        bubbleSort(inputs);
-        }
 
-        void value (List < Integer > inputs) {
-            Collections.sort(inputs);
-            System.out.println("The lowest value is: " + inputs.get(0));
-            System.out.println("The highest value is: " + inputs.get(inputs.size() - 1));
-        }
+    public List<Integer> sort(List<Integer> inputs) {
+        List<Integer> inputsArray = bubbleSort(inputs);
+        return inputsArray;
+    }
 
-        void evenOdd (List < Integer > inputs) {
-            int odd = 0, even = 0;
-            for (int i = 0; i < inputs.size(); i++) {
-                if (inputs.get(i) % 2 != 0) {
-                    odd++;
-                } else if (inputs.get(i) % 2 == 0) {
-                    even++;
+    public int oddAmount(List<Integer> inputs) {
+        int oddAmount = 0;
+        for (int i = 0; i < inputs.size(); i++) {
+            if (inputs.get(i) % 2 != 0) {
+                oddAmount++;
+            }
+        }
+        return oddAmount;
+    }
+
+    public int evenAmount(List<Integer> inputs) {
+        int evenAmount = 0;
+
+        for (int i = 0; i < inputs.size(); i++) {
+            if(inputs.get(i) % 2 == 0) {
+                evenAmount++;
+            }
+        }
+        return evenAmount;
+    }
+
+    public int printFirstHalfSum(List<Integer> inputs) {
+        int firstHalf = 0;
+
+        for (int i = 0; i < inputs.size(); i++) {
+            if (i < (inputs.size() / 2)) {
+                firstHalf += inputs.get(i);
+            }
+        }
+        return firstHalf;
+    }
+
+    public int printSecondHalfSum(List<Integer> inputs) {
+        int secondHalf = 0;
+
+        for (int i = 0; i < inputs.size(); i++) {
+            if (i >= (inputs.size() / 2)) {
+                secondHalf += inputs.get(i);
+            }
+        }
+        return secondHalf;
+    }
+
+//    public void compareHalves(List<Integer> inputs) {
+//
+//        if ((inputs.size() / 2) != (inputs.size() - (inputs.size() / 2))) {
+//            int secondHalf = printSecondHalfSum(inputs);
+//            secondHalf = secondHalf - inputs.get(inputs.size() - 1);
+//        }
+//
+//    }
+
+    public List<Integer> bubbleSort(List<Integer> inputs) {
+
+        for (int i = 0; i < inputs.size(); i++) {
+            for (int j = 0; j < inputs.size() - 1; j++) {
+                if (inputs.get(j) > inputs.get(j + 1)) {
+                    int temp = inputs.get(j + 1);
+                    inputs.set(j + 1, inputs.get(j));
+                    inputs.set(j, temp);
                 }
             }
-            System.out.println("There are: " + odd + " odd numbers");
-            System.out.println("There are: " + even + " even numbers");
         }
+        return inputs;
+    }
 
-        void sum (List < Integer > inputs) {
-            int firstHalf = 0, secondHalf = 0;
-            int halfList = (inputs.size() / 2);
-
-            for (int i = 0; i < inputs.size(); i++) {
-                if (i < halfList) {
-                    firstHalf += inputs.get(i);
-                } else {
-                    secondHalf += inputs.get(i);
-                }
-            }
-
-            System.out.println("The sum of the first half is: " + firstHalf);
-            System.out.println("The sum of the second half is: " + secondHalf);
-
-            if (halfList != (inputs.size() - halfList)) {
-                secondHalf = secondHalf - inputs.get(inputs.size() - 1);
-            }
-
-            if (firstHalf > secondHalf) {
-                System.out.println("The sum of the first half is grater!");
-            } else if (firstHalf < secondHalf) {
-                System.out.println("The sum of the second half is grater!");
-            } else {
-                System.out.println("Halves are equal!");
-            }
-        }
-
-      public Integer[] bubbleSort (List <Integer> inputs) {
-
-            Integer[] inputsArray = inputs.toArray(new Integer[0]);
-
-            for (int i = 0; i < inputsArray.length; i++) {
-                for (int j = 0; j < inputsArray.length - 1; j++) {
-                    if (inputsArray[j] > inputsArray[j + 1]) {
-                        int temp = inputsArray[j + 1];
-                        inputsArray[j + 1] = inputsArray[j];
-                        inputsArray[j] = temp;
-
-                    }
-                }
-            }
-          return inputsArray;
-      }
 }
 

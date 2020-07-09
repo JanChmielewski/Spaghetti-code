@@ -1,4 +1,6 @@
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 
 // find a way to read "enter" as invalid selection
 
@@ -19,6 +21,13 @@ public class TaskOne {
         System.out.println("9. Compare two halves of the list");
         System.out.print("Your choice: ");
 
+        // TODO handle invalid input (not a number)
+        // think about the program's flow, what is more common:
+        // the user making a mistake when typing the input array (multiple numbers separated with a comma)
+        // or choosing an option (single digit/number)?
+        // if they make a mistake when typing array they have to go through the option choice again
+        // maybe changing the order of the questions could improve the usability?
+        // if you decide to swap the order how solving the initial problem of invalid input will change?
         int choice = Integer.parseInt(in.nextLine().trim());
 
         System.out.println("Enter a list of numbers and please separate them by commas.");
@@ -38,21 +47,23 @@ public class TaskOne {
                 System.out.println("Unsorted list: " + inputs);
                 break;
             case 2:
-                sort(inputs);
+                List<Integer> sortedList = sort(inputs);
 
                 System.out.print("[");
-                for (Integer s : inputs) {
-                    System.out.print(s + ", ");
+                for (int i = 0; i < sortedList.size(); i++) {
+                    Integer s = sortedList.get(i);
+                    System.out.print(s);
+                    if (i < sortedList.size() - 1) {
+                        System.out.print(", ");
+                    }
                 }
-                System.out.print("\b");
-                System.out.print("\b");
                 System.out.print("]");
                 break;
             case 3:
                 System.out.println("The lowest value is: " + minValue(inputs));
                 break;
             case 4:
-                System.out.println("The highest value is: " +maxValue(inputs));
+                System.out.println("The highest value is: " + maxValue(inputs));
                 break;
             case 5:
                 System.out.println("There are: " + oddAmount(inputs) + " odd numbers");
@@ -67,7 +78,10 @@ public class TaskOne {
                 System.out.println("The sum of the second half is: " + printSecondHalfSum(inputs));
                 break;
             case 9:
+                // some methods return int some Integer, try working on more better consistency
                 Integer firstHalf = printFirstHalfSum(inputs);
+                // what does removeLastElement do? does it remove last element only
+                // or has more login inside? that's not obvious from the name
                 Integer secondHalf = removeLastElement(inputs);
 
                 if (firstHalf > secondHalf) {
@@ -84,8 +98,8 @@ public class TaskOne {
 
     public int minValue(List<Integer> inputs) {
         int min = 0;
-        for(int i = 0; i < inputs.size(); i++) {
-                 min = inputs.get(i);
+        for (int i = 0; i < inputs.size(); i++) {
+            min = inputs.get(i);
             for (int number : inputs) {
                 if (number < min) {
                     min = number;
@@ -99,7 +113,7 @@ public class TaskOne {
         int max = 0;
         for (int i = 0; i < inputs.size(); i++) {
             max = inputs.get(i);
-            for (int number: inputs) {
+            for (int number : inputs) {
                 if (number > max) {
                     max = number;
                 }
@@ -109,7 +123,7 @@ public class TaskOne {
     }
 
     public List<Integer> sort(List<Integer> inputs) {
-        List<Integer> inputsArray = bubbleSort(inputs);
+        List<Integer> inputsArray = bubbleSort(new ArrayList<>(inputs));
         return inputsArray;
     }
 
@@ -127,7 +141,7 @@ public class TaskOne {
         int evenAmount = 0;
 
         for (int i = 0; i < inputs.size(); i++) {
-            if(inputs.get(i) % 2 == 0) {
+            if (inputs.get(i) % 2 == 0) {
                 evenAmount++;
             }
         }

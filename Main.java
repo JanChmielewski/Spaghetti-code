@@ -1,9 +1,15 @@
+import jc.OperationList;
+import jc.OptionChooser;
+import jc.input.MockInputProvider;
+import jc.input.StandardInputProvider;
 
 public class Main {
     public static void main(String[] args) {
 
-        TaskOne list = new TaskOne();
-        list.list();
+//        OptionChooser optionChooser = new OptionChooser(new OperationList(new StandardInputProvider().getList()));
+        OptionChooser optionChooser = new OptionChooser(new OperationList(new MockInputProvider().getList()));
+
+        optionChooser.chooseOptions();
 
     }
 }

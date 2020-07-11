@@ -41,12 +41,6 @@ public class TaskOne {
 
 
         String choice = in.nextLine();
-        if (choice.equals("")) {
-            System.out.println("Invalid selection!");
-            System.out.println("Choose one from the options above");
-            System.out.print("Your choice: ");
-            choice = in.nextLine();
-        }
 
         switch (choice) {
             case "1":

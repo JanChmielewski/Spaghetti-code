@@ -6,8 +6,7 @@ import jc.input.StandardInputProvider;
 public class Main {
     public static void main(String[] args) {
 
-//        OptionChooser optionChooser = new OptionChooser(new OperationList(new StandardInputProvider().getList()));
-        OptionChooser optionChooser = new OptionChooser(new OperationList(new MockInputProvider().getList()));
+        OptionChooser optionChooser = new OptionChooser(new OperationList(new StandardInputProvider().getList()));
 
         optionChooser.chooseOptions();
 

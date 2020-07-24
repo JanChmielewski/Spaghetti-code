@@ -1,13 +1,42 @@
+package src.main.java;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
 
 public class TaskOne {
 
     public static final Scanner in = new Scanner(System.in);
 
-        public Integer minValue (List < Integer > inputs) {
+        Menu menu = new Menu();
+
+    public List<Integer> list() {
+
+        System.out.println("Enter a list of numbers and please separate them by commas.");
+        System.out.println("Example: ");
+        System.out.println("1,2,3,4,...,");
+        System.out.print("Enter some numbers: ");
+
+        String line = in.nextLine();
+        if (line.equals("")) {
+            System.out.println("Invalid input!");
+            list();
+        }
+
+        String[] numbers = line.split(",");
+        List<Integer> inputs = new ArrayList<>();
+        for (String number : numbers) {
+            inputs.add(Integer.valueOf((number)));
+        }
+
+        menu.menu(inputs);
+
+        return inputs;
+    }
+
+        List<Integer> inputs = list();
+
+        public Integer minValue () {
             Integer min = 0;
             for (int i = 0; i < inputs.size(); i++) {
                 min = inputs.get(i);
@@ -20,7 +49,7 @@ public class TaskOne {
             return min;
         }
 
-        public Integer maxValue (List < Integer > inputs) {
+        public Integer maxValue() {
             Integer max = 0;
             for (int i = 0; i < inputs.size(); i++) {
                 max = inputs.get(i);
@@ -33,12 +62,12 @@ public class TaskOne {
             return max;
         }
 
-        public List<Integer> sort (List < Integer > inputs) {
-            List<Integer> inputsArray = bubbleSort(new ArrayList<>(inputs));
+        public List<Integer> sort () {
+            List<Integer> inputsArray = bubbleSort();
             return inputsArray;
         }
 
-        public Integer oddAmount (List < Integer > inputs) {
+        public Integer oddAmount () {
             Integer oddAmount = 0;
             for (int i = 0; i < inputs.size(); i++) {
                 if (inputs.get(i) % 2 != 0) {
@@ -48,7 +77,7 @@ public class TaskOne {
             return oddAmount;
         }
 
-        public Integer evenAmount (List < Integer > inputs) {
+        public Integer evenAmount () {
             Integer evenAmount = 0;
 
             for (int i = 0; i < inputs.size(); i++) {
@@ -59,7 +88,7 @@ public class TaskOne {
             return evenAmount;
         }
 
-        public Integer printFirstHalfSum (List < Integer > inputs) {
+        public Integer printFirstHalfSum () {
             Integer firstHalf = 0;
 
             for (int i = 0; i < inputs.size(); i++) {
@@ -70,7 +99,7 @@ public class TaskOne {
             return firstHalf;
         }
 
-        public Integer printSecondHalfSum (List < Integer > inputs) {
+        public Integer printSecondHalfSum () {
 
             Integer secondHalf1 = 0;
 
@@ -88,7 +117,7 @@ public class TaskOne {
 
         }
 
-        public List<Integer> bubbleSort (List < Integer > inputs) {
+        public List<Integer> bubbleSort () {
 
             for (int i = 0; i < inputs.size(); i++) {
                 for (int j = 0; j < inputs.size() - 1; j++) {

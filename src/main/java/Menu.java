@@ -1,3 +1,5 @@
+package src.main.java;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -6,30 +8,7 @@ public class Menu {
 
     TaskOne tsOne = new TaskOne();
     Scanner in = new Scanner(System.in);
-
-    public void list() {
-
-        System.out.println("Enter a list of numbers and please separate them by commas.");
-        System.out.println("Example: ");
-        System.out.println("1,2,3,4,...,");
-        System.out.print("Enter some numbers: ");
-
-        String line = in.nextLine();
-        if (line.equals("")) {
-            System.out.println("Invalid input!");
-            list();
-        }
-
-        String[] numbers = line.split(",");
-        List<Integer> inputs = new ArrayList<>();
-        for (String number : numbers) {
-            inputs.add(Integer.valueOf((number)));
-        }
-
-        menu(inputs);
-
-    }
-
+    
     void menu(List<Integer> inputs) {
         System.out.println("The list of thing I can do");
         System.out.println("1. Print unsorted list");
@@ -50,7 +29,7 @@ public class Menu {
                 System.out.println("Unsorted list: " + inputs);
                 break;
             case "2":
-                List<Integer> sortedList = tsOne.sort(inputs);
+                List<Integer> sortedList = tsOne.sort();
 
                 System.out.print("[");
                 for (int i = 0; i < sortedList.size(); i++) {
@@ -63,26 +42,26 @@ public class Menu {
                 System.out.print("]");
                 break;
             case "3":
-                System.out.println("The lowest value is: " + tsOne.minValue(inputs));
+                System.out.println("The lowest value is: " + tsOne.minValue());
                 break;
             case "4":
-                System.out.println("The highest value is: " + tsOne.maxValue(inputs));
+                System.out.println("The highest value is: " + tsOne.maxValue());
                 break;
             case "5":
-                System.out.println("There are: " + tsOne.oddAmount(inputs) + " odd numbers");
+                System.out.println("There are: " + tsOne.oddAmount() + " odd numbers");
                 break;
             case "6":
-                System.out.println("There are: " + tsOne.evenAmount(inputs) + " even numbers");
+                System.out.println("There are: " + tsOne.evenAmount() + " even numbers");
                 break;
             case "7":
-                System.out.println("The sum of the first half is: " + tsOne.printFirstHalfSum(inputs));
+                System.out.println("The sum of the first half is: " + tsOne.printFirstHalfSum());
                 break;
             case "8":
-                System.out.println("The sum of the second half is: " + tsOne.printSecondHalfSum(inputs));
+                System.out.println("The sum of the second half is: " + tsOne.printSecondHalfSum());
                 break;
             case "9":
-                Integer firstHalf = tsOne.printFirstHalfSum(inputs);
-                Integer secondHalf = tsOne.printSecondHalfSum(inputs);
+                Integer firstHalf = tsOne.printFirstHalfSum();
+                Integer secondHalf = tsOne.printSecondHalfSum();
 
                 if (firstHalf > secondHalf) {
                     System.out.println("The sum of the first half is grater!");

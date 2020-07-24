@@ -1,9 +1,11 @@
+package src.main.java;
 
 public class Main {
     public static void main(String[] args) {
 
-        Menu menu = new Menu();
-        menu.list();
+        TaskOne tsOn = new TaskOne();
+
+        tsOn.list();
 
     }
 }

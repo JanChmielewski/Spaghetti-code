@@ -8,33 +8,8 @@ public class TaskOne {
 
     public static final Scanner in = new Scanner(System.in);
 
-        Menu menu = new Menu();
 
-    public List<Integer> list() {
-
-        System.out.println("Enter a list of numbers and please separate them by commas.");
-        System.out.println("Example: ");
-        System.out.println("1,2,3,4,...,");
-        System.out.print("Enter some numbers: ");
-
-        String line = in.nextLine();
-        if (line.equals("")) {
-            System.out.println("Invalid input!");
-            list();
-        }
-
-        String[] numbers = line.split(",");
-        List<Integer> inputs = new ArrayList<>();
-        for (String number : numbers) {
-            inputs.add(Integer.valueOf((number)));
-        }
-
-        menu.menu(inputs);
-
-        return inputs;
-    }
-
-        List<Integer> inputs = list();
+        List<Integer> inputs =(List<Integer>) new Menu();
 
         public Integer minValue () {
             Integer min = 0;

@@ -1,4 +1,3 @@
-package src.main.java;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,7 +5,9 @@ import java.util.Scanner;
 
 public class Menu {
 
-    TaskOne tsOne = new TaskOne();
+    public Menu() {
+    }
+
     Scanner in = new Scanner(System.in);
 
     public List<Integer> list() {
@@ -34,6 +35,9 @@ public class Menu {
     }
 
     void menu(List<Integer> inputs) {
+
+        TaskOne tsOne = new TaskOne(inputs);
+
         System.out.println("The list of thing I can do");
         System.out.println("1. Print unsorted list");
         System.out.println("2. Sort");

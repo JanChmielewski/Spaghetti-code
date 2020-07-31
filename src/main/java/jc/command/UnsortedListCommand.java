@@ -1,10 +1,12 @@
 package jc.command;
 
+import jc.input.InputHolder;
+
 import java.util.List;
 
-public class UnsortedList extends AbstractCommand<List<Integer>> {
+public class UnsortedListCommand extends AbstractCommand<List<Integer>> {
 
-    public UnsortedList(InputHolder input) {
+    public UnsortedListCommand(InputHolder input) {
         super(input);
     }
 

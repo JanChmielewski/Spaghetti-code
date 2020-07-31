@@ -1,10 +1,12 @@
 package jc.command;
 
+import jc.input.InputHolder;
+
 import java.util.List;
 
-public class SecondHalfSum  extends AbstractCommand<Integer> {
+public class SecondHalfSumCommand extends AbstractCommand<Integer> {
 
-    public SecondHalfSum(InputHolder input) {
+    public SecondHalfSumCommand(InputHolder input) {
         super(input);
     }
 

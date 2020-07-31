@@ -1,4 +1,6 @@
-package jc.command;
+package jc.printer;
+
+import jc.command.Command;
 
 public class PrintInteger implements PrintCommand {
 

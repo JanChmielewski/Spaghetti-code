@@ -1,8 +1,10 @@
 package jc.command;
 
-public class MaxValue extends AbstractCommand<Integer> {
+import jc.input.InputHolder;
 
-    public MaxValue(InputHolder input) {
+public class MaxValueCommand extends AbstractCommand<Integer> {
+
+    public MaxValueCommand(InputHolder input) {
         super(input);
     }
 

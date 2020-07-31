@@ -6,12 +6,11 @@ public enum ComparisionEnum {
     private final String symbol;
 
     ComparisionEnum(String symbol) {
-
         this.symbol = symbol;
     }
 
-    public String verdict(String lhName, String rhName) {
-        return String.format("%s %s %s", lhName, symbol, rhName);
+    public String getSymbol() {
+        return symbol;
     }
 
     public static ComparisionEnum compare(Integer lhs, Integer rhs) {

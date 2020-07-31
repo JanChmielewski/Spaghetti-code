@@ -21,6 +21,7 @@ public class OptionChooser {
             String option = in.nextLine().trim();
 
             if (option.equalsIgnoreCase("q")) {
+                System.out.println("Bye!");
                 break;
             }
 

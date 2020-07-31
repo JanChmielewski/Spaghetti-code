@@ -1,10 +1,10 @@
 package jc.command;
 
-import java.util.List;
+import jc.input.InputHolder;
 
-public class EvenSum extends AbstractCommand<Integer> {
+public class EvenSumCommand extends AbstractCommand<Integer> {
 
-    public EvenSum(InputHolder input) {
+    public EvenSumCommand(InputHolder input) {
         super(input);
     }
 

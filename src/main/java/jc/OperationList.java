@@ -1,19 +1,20 @@
 package jc;
 
 import jc.command.Command;
-import jc.command.EvenSum;
-import jc.command.FirstHalfSum;
-import jc.command.HalvesComparator;
-import jc.command.InputHolder;
-import jc.command.MaxValue;
-import jc.command.MinValue;
-import jc.command.OddSum;
-import jc.command.PrintComparison;
-import jc.command.PrintInteger;
-import jc.command.PrintList;
-import jc.command.SecondHalfSum;
-import jc.command.SortedList;
-import jc.command.UnsortedList;
+import jc.command.EvenSumCommand;
+import jc.command.FirstHalfSumCommand;
+import jc.command.HalvesComparatorCommand;
+import jc.command.MaxValueCommand;
+import jc.command.MinValueCommand;
+import jc.command.OddSumCommand;
+import jc.command.SecondHalfSumCommand;
+import jc.command.SortedListCommand;
+import jc.command.UnsortedListCommand;
+import jc.input.InputHolder;
+import jc.input.InputProvider;
+import jc.printer.PrintComparison;
+import jc.printer.PrintInteger;
+import jc.printer.PrintList;
 
 import java.util.List;
 import java.util.Optional;
@@ -24,18 +25,20 @@ public class OperationList {
 
     private final List<Command<String>> commands;
 
-    public OperationList(int[] input) {
+    public OperationList(InputProvider inputProvider) {
+
+        InputHolder input = InputHolder.from(inputProvider);
 
         this.commands = Stream.of(
-                new PrintList<>(new UnsortedList(new InputHolder(input))),
-                new PrintList<>(new SortedList(new InputHolder(input))),
-                new PrintInteger(new MinValue(new InputHolder(input))),
-                new PrintInteger(new MaxValue(new InputHolder(input))),
-                new PrintInteger(new OddSum(new InputHolder(input))),
-                new PrintInteger(new EvenSum(new InputHolder(input))),
-                new PrintInteger(new FirstHalfSum(new InputHolder(input))),
-                new PrintInteger(new SecondHalfSum(new InputHolder(input))),
-                new PrintComparison(new HalvesComparator(new InputHolder(input)), "first half", "second half")
+                new PrintList<>(new UnsortedListCommand(input)),
+                new PrintList<>(new SortedListCommand(input)),
+                new PrintInteger(new MinValueCommand(input)),
+                new PrintInteger(new MaxValueCommand(input)),
+                new PrintInteger(new OddSumCommand(input)),
+                new PrintInteger(new EvenSumCommand(input)),
+                new PrintInteger(new FirstHalfSumCommand(input)),
+                new PrintInteger(new SecondHalfSumCommand(input)),
+                new PrintComparison(new HalvesComparatorCommand(input), "first half", "second half")
         ).collect(Collectors.toList());
     }
 
@@ -43,7 +46,12 @@ public class OperationList {
         StringBuilder sb = new StringBuilder("The list of thing I can do\n");
         for (int i = 0; i < commands.size(); i++) {
             String name = commands.get(i).name();
-            sb.append("\t").append(i + 1).append(". ").append(name.replaceFirst(".", name.substring(0, 1).toUpperCase())).append("\n");
+            sb.append("\t")
+                    .append(i + 1)
+                    .append(". ")
+                    .append(name.substring(0, 1).toUpperCase())
+                    .append(name.substring(1))
+                    .append("\n");
         }
         return sb.toString();
     }

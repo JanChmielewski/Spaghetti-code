@@ -1,10 +1,10 @@
 package jc.command;
 
-import java.util.List;
+import jc.input.InputHolder;
 
-public class MinValue  extends AbstractCommand<Integer> {
+public class MinValueCommand extends AbstractCommand<Integer> {
 
-    public MinValue(InputHolder input) {
+    public MinValueCommand(InputHolder input) {
         super(input);
     }
 

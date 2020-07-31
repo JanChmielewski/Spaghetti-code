@@ -1,10 +1,12 @@
 package jc.command;
 
+import jc.input.InputHolder;
+
 import java.util.List;
 
-public class SortedList extends AbstractCommand<List<Integer>> {
+public class SortedListCommand extends AbstractCommand<List<Integer>> {
 
-    public SortedList(InputHolder input) {
+    public SortedListCommand(InputHolder input) {
         super(input);
     }
 

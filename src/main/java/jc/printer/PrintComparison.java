@@ -1,4 +1,7 @@
-package jc.command;
+package jc.printer;
+
+import jc.command.Command;
+import jc.command.ComparisionEnum;
 
 public class PrintComparison implements PrintCommand {
 
@@ -19,6 +22,7 @@ public class PrintComparison implements PrintCommand {
 
     @Override
     public String execute() {
-        return delegate.execute().verdict(lhs, rhs);
+        return String.format("%s %s %s", lhs, delegate.execute().getSymbol(), rhs);
     }
+
 }

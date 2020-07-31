@@ -1,10 +1,10 @@
 package jc.command;
 
-import java.util.List;
+import jc.input.InputHolder;
 
-public class OddSum  extends AbstractCommand<Integer> {
+public class OddSumCommand extends AbstractCommand<Integer> {
 
-    public OddSum(InputHolder input) {
+    public OddSumCommand(InputHolder input) {
         super(input);
     }
 

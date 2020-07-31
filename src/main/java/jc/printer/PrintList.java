@@ -1,4 +1,6 @@
-package jc.command;
+package jc.printer;
+
+import jc.command.Command;
 
 import java.util.List;
 import java.util.stream.Collectors;

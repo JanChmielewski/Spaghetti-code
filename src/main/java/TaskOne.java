@@ -15,6 +15,7 @@ public class TaskOne {
                     min = number;
                 }
             }
+
         }
         return min;
     }
@@ -28,6 +29,7 @@ public class TaskOne {
                     max = number;
                 }
             }
+
         }
         return max;
     }
@@ -43,6 +45,7 @@ public class TaskOne {
             if (inputs.get(i) % 2 != 0) {
                 oddAmount++;
             }
+
         }
         return oddAmount;
     }
@@ -58,18 +61,22 @@ public class TaskOne {
             if (inputs.get(i) == 0) {
                 evenAmount--;
             }
+
         }
         return evenAmount;
     }
 
     public Integer printFirstHalfSum() {
-        Integer firstHalf = 0;
+        Integer firstHalf1 = 0;
 
         for (int i = 0; i < inputs.size(); i++) {
             if (i < (inputs.size() / 2)) {
-                firstHalf += inputs.get(i);
+                firstHalf1 += inputs.get(i);
             }
         }
+
+        Integer firstHalf = firstHalf1;
+
         return firstHalf;
     }
 
@@ -86,7 +93,6 @@ public class TaskOne {
         if ((inputs.size() / 2) != (inputs.size() - (inputs.size() / 2))) {
             secondHalf = secondHalf - inputs.get(inputs.size() - 1);
         }
-
         return secondHalf;
 
     }

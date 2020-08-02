@@ -55,6 +55,7 @@ public class Menu {
         switch (choice) {
             case "1":
                 System.out.println("Unsorted list: " + inputs);
+                quitQuestion();
                 break;
             case "2":
                 List<Integer> sortedList = tsOne.sort();
@@ -68,24 +69,31 @@ public class Menu {
                     }
                 }
                 System.out.print("]");
+                quitQuestion();
                 break;
             case "3":
                 System.out.println("The lowest value is: " + tsOne.minValue());
+                quitQuestion();
                 break;
             case "4":
                 System.out.println("The highest value is: " + tsOne.maxValue());
+                quitQuestion();
                 break;
             case "5":
                 System.out.println("There are: " + tsOne.oddAmount() + " odd numbers");
+                quitQuestion();
                 break;
             case "6":
                 System.out.println("There are: " + tsOne.evenAmount() + " even numbers");
+                quitQuestion();
                 break;
             case "7":
                 System.out.println("The sum of the first half is: " + tsOne.printFirstHalfSum());
+                quitQuestion();
                 break;
             case "8":
                 System.out.println("The sum of the second half is: " + tsOne.printSecondHalfSum());
+                quitQuestion();
                 break;
             case "9":
                 Integer firstHalf = tsOne.printFirstHalfSum();
@@ -98,10 +106,26 @@ public class Menu {
                 } else {
                     System.out.println("Halves are equal!");
                 }
+                quitQuestion();
                 break;
             default:
                 System.out.println("Invalid selection!");
                 menu(inputs);
+        }
+    }
+
+    void quitQuestion() {
+        System.out.println("Would you like to quit? (Y)es/(N)o");
+        String quit = in.nextLine();
+
+        switch (quit) {
+            case "Y":
+                System.exit(0);
+            case "N" :
+                menu(list());
+            default:
+                System.out.println("Invalid selection");
+                quitQuestion();
         }
     }
 }

@@ -35,6 +35,20 @@ class TaskOneTest {
     }
 
     @Test
+    public void firstHalfSumTest() {
+        Integer firstHalfSum = tsOne.printFirstHalfSum();
+
+        assertEquals(13, firstHalfSum);
+    }
+
+    @Test
+    public void secondHalfSumTest() {
+        Integer secondHalfSum = tsOne.printSecondHalfSum();
+
+        assertEquals(52, secondHalfSum);
+    }
+
+    @Test
     public void sortGivenList() {
         List<Integer> sortedList = tsOne.sort();
         List<Integer> collectionsSortedList = new ArrayList<>(INTEGERS);
@@ -54,20 +68,6 @@ class TaskOneTest {
         Integer evenAmount = tsOne.evenAmount();
 
         assertEquals(6, evenAmount);
-    }
-
-    @Test
-    public void firstHalfSumTest() {
-        Integer firstHalfSum = tsOne.printFirstHalfSum();
-
-        assertEquals(13, firstHalfSum);
-    }
-
-    @Test
-    public void secondHalfSumTest() {
-        Integer secondHalfSum = tsOne.printSecondHalfSum();
-
-        assertEquals(52, secondHalfSum);
     }
 
 }

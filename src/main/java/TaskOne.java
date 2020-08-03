@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class TaskOne {
@@ -99,16 +100,18 @@ public class TaskOne {
 
     public List<Integer> bubbleSort() {
 
-        for (int i = 0; i < inputs.size(); i++) {
-            for (int j = 0; j < inputs.size() - 1; j++) {
-                if (inputs.get(j) > inputs.get(j + 1)) {
-                    int temp = inputs.get(j + 1);
-                    inputs.set(j + 1, inputs.get(j));
-                    inputs.set(j, temp);
+        List<Integer> integerList = new ArrayList<>(inputs);
+
+        for (int i = 0; i < integerList.size(); i++) {
+            for (int j = 0; j < integerList.size() - 1; j++) {
+                if (integerList.get(j) > integerList.get(j + 1)) {
+                    int temp = integerList.get(j + 1);
+                    integerList.set(j + 1, integerList.get(j));
+                    integerList.set(j, temp);
                 }
             }
         }
-        return inputs;
+        return integerList;
     }
 
 }

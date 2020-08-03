@@ -37,9 +37,10 @@ public class Menu {
     void menu(List<Integer> inputs) {
 
         TaskOne tsOne = new TaskOne(inputs);
-        String userChoice = "";
+        GetMinValue minVal = new GetMinValue(inputs);
+        String choice = "";
 
-        while (userChoice != "Q") {
+        while (choice != "Q") {
 
             System.out.println("The list of thing I can do");
             System.out.println("1. Print unsorted list");
@@ -54,7 +55,7 @@ public class Menu {
             System.out.println("(Q)uit");
             System.out.print("Your choice: ");
 
-            String choice = in.nextLine();
+            choice = in.nextLine();
 
             switch (choice) {
                 case "1":
@@ -76,7 +77,7 @@ public class Menu {
 
                     break;
                 case "3":
-                    System.out.println("The lowest value is: " + tsOne.minValue());
+                    System.out.println("The lowest value is: " + minVal.minValue());
 
                     break;
                 case "4":
@@ -115,10 +116,7 @@ public class Menu {
                     return;
                 default:
                     System.out.println("Invalid selection!");
-                    menu(inputs);
             }
-        }  if (userChoice == "Q") {
-            return;
-        } else if (userChoice == "q");
+        }
     }
 }

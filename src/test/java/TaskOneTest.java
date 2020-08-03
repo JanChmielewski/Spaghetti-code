@@ -11,11 +11,12 @@ class TaskOneTest {
     public static final List<Integer> INTEGERS = List.of(0, 3, 1, 2, 3, 4, 1, 2, 5, 6, 8, 30);
     public static final ArrayList<Integer> INPUTS = new ArrayList<>(INTEGERS);
     TaskOne tsOne = new TaskOne(INPUTS);
+    GetMinValue minVal = new GetMinValue(INPUTS);
 
     @Test
     public void minValueGiven() {
 
-        Integer min = tsOne.minValue();
+        Integer min = minVal.minValue();
         assertEquals(0, min);
     }
 

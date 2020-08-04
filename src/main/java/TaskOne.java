@@ -7,25 +7,6 @@ public class TaskOne {
 
     public TaskOne(List<Integer> inputs) { this.inputs = inputs; }
 
-    public Integer maxValue() {
-        Integer max = 0;
-        for (int i = 0; i < inputs.size(); i++) {
-            max = inputs.get(i);
-            for (int number : inputs) {
-                if (number > max) {
-                    max = number;
-                }
-            }
-
-        }
-        return max;
-    }
-
-    public List<Integer> sort() {
-        List<Integer> inputsArray = bubbleSort();
-        return inputsArray;
-    }
-
     public Integer oddAmount() {
         Integer oddAmount = 0;
         for (int i = 0; i < inputs.size(); i++) {
@@ -84,20 +65,6 @@ public class TaskOne {
 
     }
 
-    public List<Integer> bubbleSort() {
 
-        List<Integer> integerList = new ArrayList<>(inputs);
-
-        for (int i = 0; i < integerList.size(); i++) {
-            for (int j = 0; j < integerList.size() - 1; j++) {
-                if (integerList.get(j) > integerList.get(j + 1)) {
-                    int temp = integerList.get(j + 1);
-                    integerList.set(j + 1, integerList.get(j));
-                    integerList.set(j, temp);
-                }
-            }
-        }
-        return integerList;
-    }
 
 }

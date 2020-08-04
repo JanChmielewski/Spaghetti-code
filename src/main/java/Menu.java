@@ -37,7 +37,9 @@ public class Menu {
     void menu(List<Integer> inputs) {
 
         TaskOne tsOne = new TaskOne(inputs);
-        GetMinValue minVal = new GetMinValue(inputs);
+        MinValue minVal = new MinValue(inputs);
+        MaxValue maxVal = new MaxValue(inputs);
+        SortedList sort = new SortedList(inputs);
         String choice = "";
 
         while (choice != "Q") {
@@ -63,7 +65,7 @@ public class Menu {
 
                     break;
                 case "2":
-                    List<Integer> sortedList = tsOne.sort();
+                    List<Integer> sortedList = sort.sort();
 
                     System.out.print("[");
                     for (int i = 0; i < sortedList.size(); i++) {
@@ -81,7 +83,7 @@ public class Menu {
 
                     break;
                 case "4":
-                    System.out.println("The highest value is: " + tsOne.maxValue());
+                    System.out.println("The highest value is: " + maxVal.maxValue());
 
                     break;
                 case "5":

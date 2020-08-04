@@ -11,7 +11,10 @@ class TaskOneTest {
     public static final List<Integer> INTEGERS = List.of(0, 3, 1, 2, 3, 4, 1, 2, 5, 6, 8, 30);
     public static final ArrayList<Integer> INPUTS = new ArrayList<>(INTEGERS);
     TaskOne tsOne = new TaskOne(INPUTS);
-    GetMinValue minVal = new GetMinValue(INPUTS);
+    MinValue minVal = new MinValue(INPUTS);
+    MaxValue maxVal = new MaxValue(INPUTS);
+    SortedList sort = new SortedList(INPUTS);
+    BubbleSortedList bubble = new BubbleSortedList(INPUTS);
 
     @Test
     public void minValueGiven() {
@@ -23,15 +26,21 @@ class TaskOneTest {
     @Test
     public void maxValueGiven() {
 
-        Integer max = tsOne.maxValue();
+        Integer max = maxVal.maxValue();
         assertEquals(30, max);
     }
 
     @Test
     public void bubblesortGivenList() {
         List<Integer> collectionsSortedList = new ArrayList<>(INTEGERS);
-        List<Integer> sortedList = tsOne.bubbleSort();
+        List<Integer> sortedList = bubble.bubbleSort();
         Collections.sort(collectionsSortedList);
+
+        System.out.println("------------TEST-------------");
+        System.out.println(sortedList);
+        System.out.println(collectionsSortedList);
+        System.out.println("-----------------------------");
+
         assertEquals(sortedList, collectionsSortedList);
     }
 
@@ -51,7 +60,7 @@ class TaskOneTest {
 
     @Test
     public void sortGivenList() {
-        List<Integer> sortedList = tsOne.sort();
+        List<Integer> sortedList = sort.sort();
         List<Integer> collectionsSortedList = new ArrayList<>(INTEGERS);
         Collections.sort(collectionsSortedList);
         assertEquals(sortedList, collectionsSortedList);

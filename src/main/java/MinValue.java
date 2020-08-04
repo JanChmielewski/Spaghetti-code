@@ -1,10 +1,10 @@
 import java.util.List;
 
-public class GetMinValue {
+public class MinValue {
 
     List<Integer> inputs;
 
-    public GetMinValue(List<Integer> inputs) { this.inputs = inputs; }
+    public MinValue(List<Integer> inputs) { this.inputs = inputs; }
 
     public Integer minValue() {
         Integer min = 0;

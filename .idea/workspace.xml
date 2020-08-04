@@ -19,46 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b6142a4-7c6c-45a0-9dd1-6bb5e28855e0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Spaghetti-code.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_7_0_M1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_0_M1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_0_M1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_7_0_M1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_0_M1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_0_M1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/EvenAmount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/FirstHalfSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MaxValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/OddAmount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SecondHalfSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/BubbleSortedList.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/EvenAmount.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/FirstHalfSum.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/Spaghetti-code.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/MaxValue.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Menu.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/MinValue.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/OddAmount.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/SecondHalfSum.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/SortedList.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/TaskOne.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/TaskOneTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BubbleSortedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BubbleSortedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SortedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SortedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TaskOneTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TaskOneTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="1b6142a4-7c6c-45a0-9dd1-6bb5e28855e0" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -226,36 +187,36 @@
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="666" y="411" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/1792.23.1920.993/0.23.1792.1097@0.23.1792.1097" timestamp="1595762372534" />
-    <state width="1750" height="292" key="GridCell.Tab.0.bottom" timestamp="1596577674924">
+    <state width="1750" height="292" key="GridCell.Tab.0.bottom" timestamp="1596578360635">
       <screen x="0" y="23" width="1792" height="1033" />
     </state>
     <state width="1121" height="300" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1595957418648" />
     <state width="1750" height="348" key="GridCell.Tab.0.bottom/0.23.1792.1033@0.23.1792.1033" timestamp="1596104526374" />
-    <state width="1750" height="292" key="GridCell.Tab.0.bottom/1792.23.1920.1057/0.23.1792.1033@0.23.1792.1033" timestamp="1596577674924" />
+    <state width="1750" height="292" key="GridCell.Tab.0.bottom/1792.23.1920.1057/0.23.1792.1033@0.23.1792.1033" timestamp="1596578360635" />
     <state width="1750" height="292" key="GridCell.Tab.0.bottom/1792.23.1920.1057/0.23.1792.1097@0.23.1792.1097" timestamp="1596280129570" />
     <state width="1750" height="2" key="GridCell.Tab.0.bottom/1792.23.1920.993/0.23.1792.1097@0.23.1792.1097" timestamp="1595774386266" />
-    <state width="1750" height="292" key="GridCell.Tab.0.center" timestamp="1596577674924">
+    <state width="1750" height="292" key="GridCell.Tab.0.center" timestamp="1596578360635">
       <screen x="0" y="23" width="1792" height="1033" />
     </state>
     <state width="1121" height="300" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1595957418647" />
     <state width="1750" height="348" key="GridCell.Tab.0.center/0.23.1792.1033@0.23.1792.1033" timestamp="1596104526373" />
-    <state width="1750" height="292" key="GridCell.Tab.0.center/1792.23.1920.1057/0.23.1792.1033@0.23.1792.1033" timestamp="1596577674924" />
+    <state width="1750" height="292" key="GridCell.Tab.0.center/1792.23.1920.1057/0.23.1792.1033@0.23.1792.1033" timestamp="1596578360635" />
     <state width="1750" height="292" key="GridCell.Tab.0.center/1792.23.1920.1057/0.23.1792.1097@0.23.1792.1097" timestamp="1596280129570" />
     <state width="1750" height="2" key="GridCell.Tab.0.center/1792.23.1920.993/0.23.1792.1097@0.23.1792.1097" timestamp="1595774386266" />
-    <state width="1750" height="292" key="GridCell.Tab.0.left" timestamp="1596577674923">
+    <state width="1750" height="292" key="GridCell.Tab.0.left" timestamp="1596578360634">
       <screen x="0" y="23" width="1792" height="1033" />
     </state>
     <state width="1121" height="300" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1595957418646" />
     <state width="1750" height="348" key="GridCell.Tab.0.left/0.23.1792.1033@0.23.1792.1033" timestamp="1596104526373" />
-    <state width="1750" height="292" key="GridCell.Tab.0.left/1792.23.1920.1057/0.23.1792.1033@0.23.1792.1033" timestamp="1596577674923" />
+    <state width="1750" height="292" key="GridCell.Tab.0.left/1792.23.1920.1057/0.23.1792.1033@0.23.1792.1033" timestamp="1596578360634" />
     <state width="1750" height="292" key="GridCell.Tab.0.left/1792.23.1920.1057/0.23.1792.1097@0.23.1792.1097" timestamp="1596280129569" />
     <state width="1750" height="2" key="GridCell.Tab.0.left/1792.23.1920.993/0.23.1792.1097@0.23.1792.1097" timestamp="1595774386266" />
-    <state width="1750" height="292" key="GridCell.Tab.0.right" timestamp="1596577674924">
+    <state width="1750" height="292" key="GridCell.Tab.0.right" timestamp="1596578360635">
       <screen x="0" y="23" width="1792" height="1033" />
     </state>
     <state width="1121" height="300" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1595957418647" />
     <state width="1750" height="348" key="GridCell.Tab.0.right/0.23.1792.1033@0.23.1792.1033" timestamp="1596104526373" />
-    <state width="1750" height="292" key="GridCell.Tab.0.right/1792.23.1920.1057/0.23.1792.1033@0.23.1792.1033" timestamp="1596577674924" />
+    <state width="1750" height="292" key="GridCell.Tab.0.right/1792.23.1920.1057/0.23.1792.1033@0.23.1792.1033" timestamp="1596578360635" />
     <state width="1750" height="292" key="GridCell.Tab.0.right/1792.23.1920.1057/0.23.1792.1097@0.23.1792.1097" timestamp="1596280129570" />
     <state width="1750" height="2" key="GridCell.Tab.0.right/1792.23.1920.993/0.23.1792.1097@0.23.1792.1097" timestamp="1595774386266" />
     <state width="1750" height="348" key="GridCell.Tab.1.bottom" timestamp="1596546855292">

@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1b6142a4-7c6c-45a0-9dd1-6bb5e28855e0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/Spaghetti-code.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_7_0_M1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_0_M1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_0_M1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_7_0_M1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_0_M1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_0_M1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/EvenAmount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/FirstHalfSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MaxValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OddAmount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SecondHalfSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/BubbleSortedList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/EvenAmount.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/FirstHalfSum.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/Spaghetti-code.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/MaxValue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Menu.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/MinValue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/OddAmount.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/SecondHalfSum.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/SortedList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/TaskOne.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/TaskOneTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BubbleSortedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BubbleSortedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SortedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SortedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TaskOneTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TaskOneTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="downloadDocsAutomatically" value="true" />
+        <option name="downloadSourcesAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx512m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1fDo6flWE1zNVrIJFQPDNqfjEwo" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/target/classes" />
+      <recent name="$PROJECT_DIR$/target/classes/META-INF" />
+      <recent name="$PROJECT_DIR$/src/main/java" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.TaskOneTest">
+    <configuration name="TaskOneTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Spaghetti-code" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TaskOneTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TaskOneTest.bubblesortGivenList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Spaghetti-code" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TaskOneTest" />
+      <option name="METHOD_NAME" value="bubblesortGivenList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TaskOneTest.firstHalfSumTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Spaghetti-code" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TaskOneTest" />
+      <option name="METHOD_NAME" value="firstHalfSumTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TaskOneTest.oddNumbersAmount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Spaghetti-code" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TaskOneTest" />
+      <option name="METHOD_NAME" value="oddNumbersAmount" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TaskOneTest.sortGivenList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Spaghetti-code" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TaskOneTest" />
+      <option name="METHOD_NAME" value="sortGivenList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TaskOneTest" />
+        <item itemvalue="JUnit.TaskOneTest.firstHalfSumTest" />
+        <item itemvalue="JUnit.TaskOneTest.oddNumbersAmount" />
+        <item itemvalue="JUnit.TaskOneTest.bubblesortGivenList" />
+        <item itemvalue="JUnit.TaskOneTest.sortGivenList" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1b6142a4-7c6c-45a0-9dd1-6bb5e28855e0" name="Default Changelist" comment="" />
+      <created>1595761850143</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1595761850143</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="467" y="158" key="#TaskOneTest" timestamp="1596187300656">
+      <screen x="0" y="23" width="1792" height="1033" />
+    </state>
+    <state x="467" y="158" key="#TaskOneTest.firstHalfSumTest" timestamp="1596187375403">
+      <screen x="0" y="23" width="1792" height="1033" />
+    </state>
+    <state x="467" y="158" key="#TaskOneTest.firstHalfSumTest/1792.23.1920.1057/0.23.1792.1033@0.23.1792.1033" timestamp="1596187375403" />
+    <state x="467" y="158" key="#TaskOneTest/0.23.1792.1033@0.23.1792.1033" timestamp="1596104604155" />
+    <state x="467" y="158" key="#TaskOneTest/1792.23.1920.1057/0.23.1792.1033@0.23.1792.1033" timestamp="1596187300656" />
+    <state x="360" y="201" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596187315942">
+      <screen x="0" y="23" width="1792" height="1033" />
+    </state>
+    <state x="360" y="201" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1792.1033@0.23.1792.1033" timestamp="1596104682761" />
+    <state x="360" y="201" key="#com.intellij.execution.impl.EditConfigurationsDialog/1792.23.1920.1057/0.23.1792.1033@0.23.1792.1033" timestamp="1596187315942" />
+    <state x="709" y="248" key="#com.intellij.ide.util.MemberChooser" timestamp="1596536523960">
+      <screen x="0" y="23" width="1792" height="1033" />
+    </state>
+    <state x="709" y="248" key="#com.intellij.ide.util.MemberChooser/1792.23.1920.1057/0.23.1792.1033@0.23.1792.1033" timestamp="1596536523960" />
+    <state x="709" y="262" key="#com.intellij.ide.util.MemberChooser/1792.23.1920.993/0.23.1792.1097@0.23.1792.1097" timestamp="1595763067850" />
+    <state x="666" y="411" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1595762372534">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="666" y="411" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/1792.23.1920.993/0.23.1792.1097@0.23.1792.1097" timestamp="1595762372534" />
+    <state width="1750" height="292" key="GridCell.Tab.0.bottom" timestamp="1596577674924">
+      <screen x="0" y="23" width="1792" height="1033" />
+    </state>
+    <state width="1121" height="300" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1595957418648" />
+    <state width="1750" height="348" key="GridCell.Tab.0.bottom/0.23.1792.1033@0.23.1792.1033" timestamp="1596104526374" />
+    <state width="1750" height="292" key="GridCell.Tab.0.bottom/1792.23.1920.1057/0.23.1792.1033@0.23.1792.1033" timestamp="1596577674924" />
+    <state width="1750" height="292" key="GridCell.Tab.0.bottom/1792.23.1920.1057/0.23.1792.1097@0.23.1792.1097" timestamp="1596280129570" />
+    <state width="1750" height="2" key="GridCell.Tab.0.bottom/1792.23.1920.993/0.23.1792.1097@0.23.1792.1097" timestamp="1595774386266" />
+    <state width="1750" height="292" key="GridCell.Tab.0.center" timestamp="1596577674924">
+      <screen x="0" y="23" width="1792" height="1033" />
+    </state>
+    <state width="1121" height="300" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1595957418647" />
+    <state width="1750" height="348" key="GridCell.Tab.0.center/0.23.1792.1033@0.23.1792.1033" timestamp="1596104526373" />
+    <state width="1750" height="292" key="GridCell.Tab.0.center/1792.23.1920.1057/0.23.1792.1033@0.23.1792.1033" timestamp="1596577674924" />
+    <state width="1750" height="292" key="GridCell.Tab.0.center/1792.23.1920.1057/0.23.1792.1097@0.23.1792.1097" timestamp="1596280129570" />
+    <state width="1750" height="2" key="GridCell.Tab.0.center/1792.23.1920.993/0.23.1792.1097@0.23.1792.1097" timestamp="1595774386266" />
+    <state width="1750" height="292" key="GridCell.Tab.0.left" timestamp="1596577674923">
+      <screen x="0" y="23" width="1792" height="1033" />
+    </state>
+    <state width="1121" height="300" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1595957418646" />
+    <state width="1750" height="348" key="GridCell.Tab.0.left/0.23.1792.1033@0.23.1792.1033" timestamp="1596104526373" />
+    <state width="1750" height="292" key="GridCell.Tab.0.left/1792.23.1920.1057/0.23.1792.1033@0.23.1792.1033" timestamp="1596577674923" />
+    <state width="1750" height="292" key="GridCell.Tab.0.left/1792.23.1920.1057/0.23.1792.1097@0.23.1792.1097" timestamp="1596280129569" />
+    <state width="1750" height="2" key="GridCell.Tab.0.left/1792.23.1920.993/0.23.1792.1097@0.23.1792.1097" timestamp="1595774386266" />
+    <state width="1750" height="292" key="GridCell.Tab.0.right" timestamp="1596577674924">
+      <screen x="0" y="23" width="1792" height="1033" />
+    </state>
+    <state width="1121" height="300" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1595957418647" />
+    <state width="1750" height="348" key="GridCell.Tab.0.right/0.23.1792.1033@0.23.1792.1033" timestamp="1596104526373" />
+    <state width="1750" height="292" key="GridCell.Tab.0.right/1792.23.1920.1057/0.23.1792.1033@0.23.1792.1033" timestamp="1596577674924" />
+    <state width="1750" height="292" key="GridCell.Tab.0.right/1792.23.1920.1057/0.23.1792.1097@0.23.1792.1097" timestamp="1596280129570" />
+    <state width="1750" height="2" key="GridCell.Tab.0.right/1792.23.1920.993/0.23.1792.1097@0.23.1792.1097" timestamp="1595774386266" />
+    <state width="1750" height="348" key="GridCell.Tab.1.bottom" timestamp="1596546855292">
+      <screen x="0" y="23" width="1792" height="1033" />
+    </state>
+    <state width="1750" height="348" key="GridCell.Tab.1.bottom/0.23.1792.1033@0.23.1792.1033" timestamp="1596104526374" />
+    <state width="1750" height="348" key="GridCell.Tab.1.bottom/1792.23.1920.1057/0.23.1792.1033@0.23.1792.1033" timestamp="1596546855292" />
+    <state width="1750" height="348" key="GridCell.Tab.1.center" timestamp="1596546855292">
+      <screen x="0" y="23" width="1792" height="1033" />
+    </state>
+    <state width="1750" height="348" key="GridCell.Tab.1.center/0.23.1792.1033@0.23.1792.1033" timestamp="1596104526374" />
+    <state width="1750" height="348" key="GridCell.Tab.1.center/1792.23.1920.1057/0.23.1792.1033@0.23.1792.1033" timestamp="1596546855292" />
+    <state width="1750" height="348" key="GridCell.Tab.1.left" timestamp="1596546855292">
+      <screen x="0" y="23" width="1792" height="1033" />
+    </state>
+    <state width="1750" height="348" key="GridCell.Tab.1.left/0.23.1792.1033@0.23.1792.1033" timestamp="1596104526374" />
+    <state width="1750" height="348" key="GridCell.Tab.1.left/1792.23.1920.1057/0.23.1792.1033@0.23.1792.1033" timestamp="1596546855292" />
+    <state width="1750" height="348" key="GridCell.Tab.1.right" timestamp="1596546855292">
+      <screen x="0" y="23" width="1792" height="1033" />
+    </state>
+    <state width="1750" height="348" key="GridCell.Tab.1.right/0.23.1792.1033@0.23.1792.1033" timestamp="1596104526374" />
+    <state width="1750" height="348" key="GridCell.Tab.1.right/1792.23.1920.1057/0.23.1792.1033@0.23.1792.1033" timestamp="1596546855292" />
+    <state x="384" y="121" key="SettingsEditor" timestamp="1596186549615">
+      <screen x="0" y="23" width="1792" height="1033" />
+    </state>
+    <state x="384" y="121" key="SettingsEditor/1792.23.1920.1057/0.23.1792.1033@0.23.1792.1033" timestamp="1596186549615" />
+    <state x="675" y="269" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1595762333992">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="675" y="269" key="com.intellij.testIntegration.createTest.CreateTestDialog/1792.23.1920.993/0.23.1792.1097@0.23.1792.1097" timestamp="1595762333992" />
+    <state x="601" y="322" key="refactoring.ChangeSignatureDialog" timestamp="1596576758762">
+      <screen x="0" y="23" width="1792" height="1033" />
+    </state>
+    <state x="601" y="322" key="refactoring.ChangeSignatureDialog/1792.23.1920.1057/0.23.1792.1033@0.23.1792.1033" timestamp="1596576758762" />
+    <state x="561" y="252" width="670" height="676" key="search.everywhere.popup" timestamp="1595801149414">
+      <screen x="0" y="23" width="1792" height="1033" />
+    </state>
+    <state x="561" y="252" width="670" height="676" key="search.everywhere.popup/1792.23.1920.1057/0.23.1792.1033@0.23.1792.1033" timestamp="1595801149414" />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo typeName="SortedList" fieldName="bubble" />
+        <PinnedItemInfo typeName="TaskOne" fieldName="inputs" />
+        <PinnedItemInfo typeName="SortedList" fieldName="inputs" />
+      </pinned-members>
+    </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="((TaskOneTest)this).tsOne.inputs" custom="TaskOneTest" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>

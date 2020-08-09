@@ -3,10 +3,6 @@ import java.util.List;
 
 public class BubbleSortedList {
 
-    public BubbleSortedList() {
-
-    }
-
     List<Integer> inputsArray;
 
     public BubbleSortedList(List<Integer> inputsArray) { this.inputsArray = inputsArray; }

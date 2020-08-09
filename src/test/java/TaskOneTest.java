@@ -35,12 +35,6 @@ class TaskOneTest {
         List<Integer> collectionsSortedList = new ArrayList<>(INTEGERS);
         List<Integer> sortedList = bubble.bubbleSort();
         Collections.sort(collectionsSortedList);
-
-        System.out.println("------------TEST-------------");
-        System.out.println(sortedList);
-        System.out.println(collectionsSortedList);
-        System.out.println("-----------------------------");
-
         assertEquals(sortedList, collectionsSortedList);
     }
 

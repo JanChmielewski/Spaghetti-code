@@ -3,9 +3,11 @@ import java.util.List;
 public class SortedList {
 
     List<Integer> inputsArray;
-    public SortedList(List<Integer> inputs) { inputsArray = inputs; }
-
-    BubbleSortedList bubble = new BubbleSortedList();
+    BubbleSortedList bubble;
+    public SortedList(List<Integer> inputs) {
+        inputsArray = inputs;
+        bubble = new BubbleSortedList(inputsArray);
+    }
 
 
     public List<Integer> sort() {
